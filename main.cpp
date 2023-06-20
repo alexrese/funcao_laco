@@ -21,6 +21,15 @@ string retornaOpcao(int i){
         case 3:
             return "Basca Burguer";
         break;
+        case 4:
+            return "Coca Cola";
+        break;
+        case 5:
+            return "Cerveja";
+        break;
+         case 6:
+            return "Agua";
+        break;
         default:
             return "";
         break;
@@ -38,9 +47,12 @@ int main()
     cin>>endereco;
     do{
         cout<<"Selecione uma opção:"<<endl;
-        cout<<"1-Smash Burguer"<<endl;
-        cout<<"2-NLF Burguer"<<endl;
-        cout<<"3-Basca Burguer"<<endl;
+        cout<<"1-Smash Burguer - R$ 40,00"<<endl;
+        cout<<"2-NLF Burguer - R$ 38,00"<<endl;
+        cout<<"3-Basca Burguer - R$ 35,00"<<endl;
+        cout<<"4-Coca Cola - R$ 8,00"<<endl;
+        cout<<"5-Cerveja - R$ 10,00"<<endl;
+        cout<<"6-Agua - R$ 5,00"<<endl;
         cout<<"0-Sair"<<endl;
         cin>>opcao;
         if(opcao){
@@ -51,7 +63,7 @@ int main()
     
     cout<<"Seu pedido em nome de: "<<nome<<endl;
     cout <<"sera entregue no endereco: " << endereco<<endl;
-    cout <<"Os lanches sao: " <<endl;
+    cout <<"Seu pedido eh: " <<endl;
     for(int i = 0; i < p; i++){
         cout<<pedido[i]<<endl;
     }
